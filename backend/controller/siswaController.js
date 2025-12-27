@@ -6,7 +6,7 @@ const pool = require('../config/db');
 async function getAll (req, res, next){
     try{
         //menyimpan data siswa yang dipanggil dari query database di dalam row sebagai array
-        const[rows] = await pool.execute('select * from siswa order by kode_siswa desc');
+        const[rows] = await pool.execute('SELECT *, DATE_FORMAT(tgl_siswa, "%Y-%m-%d") AS tgl_siswa FROM siswa ORDER BY kode_siswa DESC');
 
         //memberikan respon dari variabel rows berupa json
         res.json(rows);

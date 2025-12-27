@@ -5,7 +5,7 @@ export default function Navbar() {
     <div style={{ padding: "20px" }}>
       <nav className="navbar navbar-expand-lg navbar-dark shadow rounded-5 pt-4 pe-3 pb-4" style={{ backgroundColor: '#19341eff'}}>
         <div className="container-fluid">
-          <Link className="navbar-brand fw-bold ms-4" to="/">Sekolah Menengah Atas</Link>
+          <Link className="navbar-brand fw-bold ms-4" to="/">Dashboard Sekolah</Link>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
           </button>
